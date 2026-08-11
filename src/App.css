@@ -1,0 +1,1082 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0b1220, #050814);
+  color: white;
+}
+
+
+
+
+
+
+
+
+/* =======================
+   PAGE / HERO
+======================= */
+
+
+h2 {
+  text-align: center;
+}
+
+.page {
+  width: 100%;
+  margin: center;
+  padding: 0;
+}
+
+.hero {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* =======================
+   LOGO
+======================= */
+
+.mainLogo {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  margin: auto;
+}
+
+/* =======================
+   TITLES
+======================= */
+
+.title {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.subtitleMain {
+  font-weight: 600;
+  margin-top: 0px;
+  text-align:center;
+  margin-bottom:3px;
+   
+}
+
+.subtitle {
+	margin-bottom:3px;
+  opacity: 0.6;
+  text-align:center;
+}
+
+/* =======================
+   BENEFITS
+======================= */
+
+.trustBlock h2 {
+  margin-top: 20px;
+}
+
+
+.benefitCard {
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px;
+}
+
+/* =======================
+   FORM (PROFESSIONAL CARD)
+======================= */
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  padding:0 10px;
+}
+
+.formCard {
+  width: 100%;
+  max-width: 520px;
+
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+
+  padding: 28px;
+  border-radius: 20px;
+
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  text-align: left;
+}
+
+.formCard h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.formCard p {
+  opacity: 0.7;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.formCard input,
+.formCard textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  background: #0f172a;
+  color: white;
+
+  outline: none;
+}
+
+.formCard button {
+  width: 100%;
+  padding: 14px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg,#3b82f6,#2563eb);
+  color: white;
+
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.formCard button:hover {
+  transform: translateY(-2px);
+}
+
+/* =======================
+   SUCCESS
+======================= */
+
+.successInside {
+  text-align: center;
+}
+
+.successInside .check {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background: #22c55e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* =======================
+   SECTIONS
+======================= */
+
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =======================
+   ABOUT
+======================= */
+.aboutText {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+
+  font-family: "Inter", system-ui, sans-serif;
+  color: rgba(255,255,255,0.85);
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+/* "VAŠ RESTORAN" */
+.aboutLead {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: white;
+  margin-bottom: 28px;
+
+  font-family: "Inter", system-ui, sans-serif;
+  text-transform: uppercase;
+}
+
+/* BLOKOVI */
+.aboutBlock {
+  margin-bottom: 22px;
+  padding-left: 14px;
+  border-left: 2px solid rgba(124, 92, 255, 0.6);
+}
+
+.aboutBlock p {
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+/* FINISH LOOK */
+.aboutBlock p:last-child {
+  margin-bottom: 0;
+}
+/* ZAVRŠETAK */
+.aboutFooter {
+  margin-top: 22px;
+  font-weight: 600;
+  color: white;
+  opacity: 0.9;
+}
+ 
+
+/* =======================
+   TEXT ANIMATION
+======================= */
+
+.word {
+  animation: fadeIn 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.gradient {
+  background: linear-gradient(90deg, #22c55e, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.besplatno {
+  color: #22c55e;
+  font-weight: 900;
+}
+
+/* =======================
+   STAMP (BESPLATNO)
+======================= */
+
+.stampTitle {
+  position: relative;
+  display: inline-block;
+}
+
+.freeStamp {
+  position: absolute;
+
+  top: -18px;          /* ⬅️ iznad teksta */
+  right: -10px;
+
+  transform: rotate(-10deg) scale(0);
+
+  padding: 8px 14px;
+
+  border: 3px solid #22c55e;
+  color: #22c55e;
+
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+
+  border-radius: 12px;
+
+  background: rgba(34, 197, 94, 0.08);
+
+  box-shadow:
+    0 0 25px rgba(34, 197, 94, 0.35),
+    inset 0 0 12px rgba(34, 197, 94, 0.15);
+
+  animation: stampIn 0.45s ease forwards;
+
+  z-index: 10; /* ⬅️ da bude iznad linija/underline-a */
+}
+
+
+
+@media (max-width:768px){
+
+.freeStamp{
+
+    right:4px;
+
+    font-size:11px;
+
+    padding:5px 9px;
+}
+
+}
+
+@keyframes stampIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-10deg) scale(2);
+  }
+
+  60% {
+    transform: rotate(-10deg) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(-10deg) scale(1);
+  }
+}
+
+/* =======================
+   MOBILE FIXES
+======================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 30px 16px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .benefitsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .freeStamp {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .formCard {
+    padding: 20px;
+  }
+}
+.phoneFrame {
+  position: relative;
+  width: 340px;
+  height: 680px;
+  margin: 30px auto;
+  padding: 12px;
+
+  background: linear-gradient(145deg, #323844, #111827);
+  border-radius: 48px;
+
+  border: 2px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.55),
+    inset 0 2px 3px rgba(255,255,255,0.08),
+    inset 0 -2px 3px rgba(0,0,0,0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden; /* OK, ali sada kontrolisano */
+}
+.phoneFrame {
+  position: relative;
+  width: 340px;
+  height: 680px;
+  margin: 30px auto;
+  padding: 12px;
+
+  background: linear-gradient(145deg, #323844, #111827);
+  border-radius: 48px;
+
+  border: 2px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.55),
+    inset 0 2px 3px rgba(255,255,255,0.08),
+    inset 0 -2px 3px rgba(0,0,0,0.4);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden; /* OK, ali sada kontrolisano */
+}
+
+/* NOTCH */
+
+.phoneFrame::before {
+  content: "";
+
+  position: absolute;
+
+  top: 12px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 150px;
+  height: 32px;
+
+  background: #050505;
+
+  border-radius: 0 0 20px 20px;
+
+  z-index: 5;
+}
+
+/* CAMERA */
+
+.phoneFrame::after {
+  content: "";
+
+  position: absolute;
+
+  top: 22px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  background: #111;
+
+  border: 2px solid #222;
+
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,0.03),
+    inset 0 0 5px rgba(0,0,0,0.9);
+
+  z-index: 6;
+}
+
+/* SCREEN */
+
+.phoneFrame video,
+.phoneFrame iframe {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  border: 0;
+
+  border-radius: 36px;
+
+  background: #000;
+
+  object-fit: cover;
+}
+
+/* SIDE BUTTONS */
+
+.powerBtn {
+  position: absolute;
+
+  right: -2px;
+  top: 180px;
+
+  width: 4px;
+  height: 90px;
+
+  border-radius: 10px;
+
+  background: #666;
+}
+
+.volUp {
+  position: absolute;
+
+  left: -2px;
+  top: 150px;
+
+  width: 4px;
+  height: 60px;
+
+  border-radius: 10px;
+
+  background: #666;
+}
+
+.volDown {
+  position: absolute;
+
+  left: -2px;
+  top: 230px;
+
+  width: 4px;
+  height: 90px;
+
+  border-radius: 10px;
+
+  background: #666;
+}
+
+@media (max-width: 768px) {
+  .phoneFrame {
+    width: 300px;
+    height: 600px;
+  }
+}
+
+
+/* SPLASH */
+.splash{
+  position:fixed;
+  inset:0;
+  background:#050814;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.splash img{
+  width:160px;
+  border-radius:20px;
+  animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn{
+  from{ transform:scale(0.6); opacity:0; }
+  to{ transform:scale(1); opacity:1; }
+}
+
+/* FOOTER */
+.footer{
+  padding:60px 20px;
+  text-align:center;
+  opacity:0.8;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.footerItem{
+  font-size:13px;
+}
+
+.fingerprint{
+  font-size:22px;
+  margin-top:10px;
+  opacity:0.7;
+}
+
+
+.trustBlock {
+  margin-top: 30px;
+}
+
+.benefitsGrid {
+  display: grid;
+   grid-template-columns: 1fr;
+
+  gap: 15px;
+
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+
+.benefitCard {
+	min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: 0.25s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.benefitIcon {
+  font-size: 20px;
+  min-width: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #7c5cff;
+}
+
+.page {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+  min-height: 100vh;
+}
+
+
+
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.footer {
+  margin-top: 80px;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 16px;
+  padding: 28px 34px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  width: fit-content;
+  max-width: 90%;
+  min-width: 280px;
+
+  text-align: center;
+  color: #fff;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* NAME */
+.brandInfo .name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.brandInfo .role {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* DIVIDER */
+.footerDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* CONTACT */
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerItem {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* COPYRIGHT */
+.copyright {
+  margin-top: 6px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+
+
+.soundBtn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: 0.2s ease;
+}
+
+.soundBtn:hover {
+  transform: scale(1.1);
+  background: rgba(0,0,0,0.8);
+}
+
+
+.animatedBenefits {
+  animation: fadeBenefits .5s ease;
+}
+
+@keyframes fadeBenefits {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.faqSection {
+  padding: 80px 20px;
+  color: white;
+  max-width: 900px;
+  margin: auto;
+  
+}
+
+.faqSection h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.faqWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faqItem {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.faqQuestion {
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  padding: 0 18px;
+  opacity: 0.7;
+}
+
+.faqItem.active .faqAnswer {
+  max-height: 200px;
+  padding-bottom: 18px;
+}
+
+.faqIcon {
+  font-size: 20px;
+}
+
+.guaranteeBox {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-weight: 600;
+  opacity: 0.9;
+} 
+ 
+ 
+ 
+
+.pricing-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+  border-left: 6px solid transparent;
+  position: relative;
+}
+
+.recommendedBadge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff9800;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.pricing-card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+ 
+.price {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  color: #111;
+}
+
+.desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* FREE */
+.free {
+  border-left-color: #2ecc71;
+}
+
+/* MONTHLY */
+.monthly {
+  border-left-color: #3498db;
+}
+
+/* YEARLY */
+.yearly {
+  border-left-color: #f39c12;
+}
+
+/* highlight kartica */
+.highlight {
+  background: linear-gradient(135deg, #ffffff, #fff7e0);
+  transform: scale(1.01);
+}
+
+/* badge */
+.badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f39c12;
+  color: white;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* old price */
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 24px;
+  margin-left: 8px;
+}
+ 
+/* buttons */
+.btn {
+  margin-top: 14px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  background: #eee;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn.primary {
+  background: #f39c12;
+  color: white;
+  font-weight: bold;
+}
+ .toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 16px;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: white;
+  z-index: 9999;
+
+  animation: toastIn 0.25s ease;
+}
+
+/* ERROR (RED) */
+.toast.error {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.35);
+}
+
+/* SUCCESS (ako kasnije želiš) */
+.toast.success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.25);
+}
+
+.toastIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+
+.panelBtn {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+   
+
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.25);
+}
+
+.panelBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.35);
+}
+
+.panelBtn:active {
+  transform: translateY(0px);
+  box-shadow: 0 8px 15px rgba(79, 70, 229, 0.2);
+}
+
+.panelBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
+}
+
+.unmuteBtn{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(0,0,0,.75);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    z-index:10;
+}
